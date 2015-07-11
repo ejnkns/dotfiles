@@ -1,0 +1,30 @@
+#! /bin/sh
+
+
+
+bspc config border_width        0
+bspc config window_gap         25
+
+bspc config top_padding		25
+
+bspc config split_ratio         0.52
+bspc config borderless_monocle  true
+bspc config gapless_monocle     true
+bspc config focus_by_distance   true
+
+
+bspc monitor -d I II III IV V
+#bspc monitor -d 1 2 3 4 5 6 7 8 9 10 
+#bspc monitor -d 一 二 三 四 五 六 七 八 九
+
+bspc rule -a Gimp desktop=^8 follow=on floating=on
+bspc rule -a mplayer2 floating=on
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc rule -a Tint2 focus=off
+bspc rule -a feh floating=on 
+bspc rule -a mpv floating=on
+bspc rule -a mopidy desktop=^9
+bspc rule -a xterm floating=on
+bspc rule -a nitrogen floating=on
+panel & 
