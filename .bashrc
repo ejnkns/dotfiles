@@ -60,7 +60,7 @@ function play() {
 #fi
 alias music='ncmpcpp'
 alias server='ssh ejnkns@10.0.0.86'
-alias rserver='ssh ejnkns@101.176.91.124'
+alias rserver='ssh ejnkns@XXX.XXX.XXX.XXX'
 
 ### Terminal/System ###
 function cs () {
